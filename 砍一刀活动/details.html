@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 是否启用 WebAPP 全屏模式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- 状态条颜色 -->
+    <meta name="format-detection" content="telephone=no">   <!-- 屏蔽数字自动识别为电话号码 -->
+    <meta name="description" content="" /> <!-- 页面描述 -->
+    <meta name="keywords" content=""/> <!-- 页面关键词 -->
+    <title>砍一刀</title>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/weui.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-weui.min.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/rest.css">
+    <link type="text/css" rel="stylesheet" href="css/webapp.css">
+    <link type="text/css" rel="stylesheet" href="css/guageEdit.css">
+    <style>
+        .information-mask{
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .information-dialog{
+            position: fixed;
+            z-index: 5000;
+            width: 80%;
+            max-width: 300px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background-color: #FFFFFF;
+            text-align: center;
+            border-radius: 3px;
+            overflow: hidden;
+
+        }
+        .xm-details-productBox,.xm-details-priceBox{display:none;}
+        .xm-details-productBox{display:block;}
+        .xm-details-button>a{display:none;}
+        #showIOSDialog1{display:block;}
+        .win_none {display:none}
+        .win {position:fixed; z-index:99999; left:0; top:0; right:0; bottom:0; background:rgba(0,0,0,0.9); -webkit-animation:bg 0.3s ease-out both; -moz-animation:bg 0.3s ease-out both; animation:bg 0.3s ease-out both}
+        .win .transparent_bg {position:fixed; z-index:11; left:0; right:0; top:0; bottom:0}
+        @-webkit-keyframes bg {0% {background:rgba(0,0,0,0)} 100% {background:rgba(0,0,0,0.8)}}
+        @keyframes bg {0% {background:rgba(0,0,0,0)} 100% {background:rgba(0,0,0,0.8)}}
+        .win .layout_win {background:#FFF; position:absolute; left:0; bottom:0; right:0; z-index:12; transform:translateY(110%); -webkit-transform:translateY(110%); -webkit-animation:m_b 0.3s ease-out both; -moz-animation:m_b 0.3s ease-out both; animation:m_b 0.3s ease-out both}
+        @-webkit-keyframes m_b {0% {transform:translateY(110%); -webkit-transform:translateY(110%)} 100% {transform:translateY(0); -webkit-transform:translateY(0)}}
+        @keyframes m_b {0% {transform:translateY(110%); -webkit-transform:translateY(110%)} 100% {transform:translateY(0); -webkit-transform:translateY(0)}}
+        /*遮罩end*/
+        .tips {width:100%; height:100%; background-image:url(images/txt_tips.png),url(images/earth.png); background-repeat:no-repeat; background-position:center -60px,left bottom; background-size:100% auto,50% auto}
+
+
+
+    </style>
+</head>
+<body class="mhome">
+
+
+
+    <div class="xm-conent">
+        <div class="xm-details-box">
+            <div class="xm-details-bg"><img src="images/activie.jpg" class="db"></div>
+            <!---产品显示框---->
+            <div class="xm-details-prize xm-details-productBox" >
+                <div class="xm-details-price">
+                    <div class="weui-cells no-weui-link" style="margin-top:0;">
+                        <div class="weui-cell" style="padding:0;">
+                            <div class="weui-cell__hd">
+                                <img src="images/default.png" data-src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3589/135/952725904/118353/5d11c2c9/581ae7d4N0ae8f7f7.jpg!q50.jpg" style="width:3rem; height: 3rem; display:block; margin-right:.5rem;">
+                            </div>
+                            <div class="weui-cell__bd" style="width:50%;">
+                                <h1 class="omit rf14">魅力元素女包波士顿包枕头包斜挎单肩手提休闲大包圆筒包子母包 铂金色送女士钱包</h1>
+                                <p class="rf12 cl_b9 omit rmt5">2016款 LV 700-4A Roder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---砍出金额框---->
+            <div class="xm-details-prize xm-details-priceBox">
+                <div class="xm-details-price">
+                    <div class="weui-cells no-weui-link" style="margin-top:0;">
+                        <div class="weui-cell" style="padding:0;">
+                            <div class="weui-cell__bd">
+                                <div class="tc rf16 lh30" style="color:#ee7b31; text-shadow: 1px 1px 2px #CCC"><b class="rmr5">88.00</b>元</div>
+                                <p class="tc rf14 lh30" style="color:#ee7b31; text-shadow: 1px 1px 2px #CCC">恭喜，一刀砍出了</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xm-details-progress rmt15">
+                <div class="xm-progress-icon">
+                    <span class="xm-progress-flex"></span>
+                    <span class="xm-progress-flex"></span>
+                    <span class="xm-progress-flex"></span>
+                    <span class="xm-progress-flex"></span>
+                    <span class="xm-progress-flex"></span>
+                    <span class="xm-progress-flex"></span>
+
+                </div>
+                <div class="xm-progress-strip">
+                    <div class="xm-progress-strip-active fullexpand" data-width="25"></div>
+                </div>
+                <div class="xm-progress-user">
+                    <span class="xm-progress-item rf12">0人</span>
+                    <span class="xm-progress-item rf12">25人</span>
+                    <span class="xm-progress-item rf12">50人</span>
+                    <span class="xm-progress-item rf12">75人</span>
+                    <span class="xm-progress-item rf12">100人</span>
+                    <span class="xm-progress-item rf12">500人</span>
+                </div>
+            </div>
+            <p class="rmt15 rf12 tc" style="color:#fccc4e;">最高500可人参与，总计最高可砍<span class="rf16">8888.00</span>元</p>
+            <div class="xm-details-button rmt15">
+               <a href="javascript:;" class="rf15" id="showIOSDialog1">我要参与</a>
+               <a href="javascript:;" class="rf15" id="showShare">找朋友继续砍</a>
+            </div>
+        </div>
+
+        <div class="xm-activity-tabs">
+            <a href="javascript:;" class="xm-activity-flex rf14 xm-activity-active">砍价实力榜</a>
+            <a href="javascript:;" class="xm-activity-flex rf14">看看大家手气</a>
+            <a href="javascript:;" class="xm-activity-flex rf14">活动说明</a>
+        </div>
+
+        <div class="xm-activity-panel">
+            <div class="xm-activity-item">
+                <div class="weui-cells no-weui-link" style="margin-top:0; background:none;">
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__nd">
+                            <p class="rf14 white rmr10 ">500</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__nd">
+                            <p class="rf14 white rmr10 ">500</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__nd">
+                            <p class="rf14 white rmr10 ">500</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__nd">
+                            <p class="rf14 white rmr10 ">500</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xm-activity-item">
+                <div class="weui-cells no-weui-link" style="margin-top:0; background:none;">
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell" >
+                        <div class="weui-cell__hd">
+                            <img src="images/default.png" data-src="images/p1.jpg" style="width:3rem; height: 3rem; display: block; margin-right:.5rem;">
+                        </div>
+                        <div class="weui-cell__bd">
+                            <h1 class="rf14" style="color:#fbc848;">Aventador</h1>
+                            <p class="white rmt10 rf14">158****5020</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <p class="rf14" style="color:#fbc848">-8888.00元</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xm-activity-item">
+                <div class="xm-explain-box">
+                    <div class="xm-explain-title rf15">
+                        <b>关于活动</b>
+                    </div>
+                    <div class="xm-explain-textarea rmt10 rf14 white lh20">
+                        在“乡粑网”平台发起“找朋友，帮砍价”活动后，通过该活动所获得的金额将以优惠的形式放到用户账号，在用户支付商品时直接抵扣。
+                    </div>
+                </div>
+                <div class="xm-explain-box">
+                    <div class="xm-explain-title rf15">
+                        <b>活动规则</b>
+                    </div>
+                    <div class="xm-explain-textarea rmt10 rf14 white lh20">
+                        <p class="rmb5">1、砍价活动自用户点击“找好友帮我砍价”按钮开始计时，活动持续24小时</p>
+                        <p class="rmb5">2、每个活动最多允许500个好友帮忙砍价</p>
+                        <p class="rmb5">3、活动结束时，微信好友砍价的总金额即会以优惠的形式发放到用户账户中</p>
+                        <p class="">4、砍价所获得的优惠不能重复使用</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="information" style="   display: none;">
+        <div class="information-mask"></div>
+        <div class="information-dialog">
+            <div class="weui-cells no-weui-link" style="margin-top:0;">
+                <div class="weui-cell" style="border-bottom:1px solid #ededed;">
+                    <div class="weui-cell__hd"><label class="weui-label rf14" style="width:3rem;">姓名:</label></div>
+                    <div class="weui-cell__bd"><input type="text" name="text" class="weui-input rf14" placeholder="请输入您的姓名"></div>
+                </div>
+                <div class="weui-cell" >
+                    <div class="weui-cell__hd"><label class="weui-label rf14" style="width:3rem;">电话:</label></div>
+                    <div class="weui-cell__bd"><input type="tel" name="tel" class="weui-input rf14" placeholder="请输入您的电话"></div>
+                </div>
+            </div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default rf15" id="cancel">取消</a>
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary rf15" style="color:#d92c28;" id="determine">确认</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="win win_none" style=""><div class="tips" style="position: absolute;top: 0px"></div></div>
+
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/lazy-load-img.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/guageEdit.js"></script>
+<script>
+    $(function () {
+        var full =  $(".fullexpand").attr("data-width");
+        $(".fullexpand").css("width",full+"%")
+
+        $(".xm-activity-tabs .xm-activity-flex").on("click",function(){
+            $(".xm-activity-tabs .xm-activity-flex").removeClass("xm-activity-active");
+            $(this).addClass("xm-activity-active");
+            var _index = $(this).index();
+            $(".xm-activity-panel .xm-activity-item").eq(_index).show().siblings().hide();
+        })
+
+        var information = $(".information");
+
+        $("#showIOSDialog1").on("click",function(){
+            information.fadeIn(200);
+        })
+        $("#cancel").on("click",function(){
+            information.fadeOut(200);
+        })
+        $(".information-mask").on("click",function(){
+            information.fadeOut(200);
+        })
+
+        $("#determine").on("click",function(){
+            information.fadeOut(200);
+            $(".xm-details-productBox").hide();
+            $(".xm-details-priceBox").show();
+            $("#showIOSDialog1").css("display","none");
+            $("#showShare").css("display","block");
+        })
+        $("#showShare").on("click",function() {
+            $(".win").show();
+        })
+        $(".win").on("click",function() {
+            $(this).hide();
+        })
+
+    })
+</script>
+</body>
+</html>

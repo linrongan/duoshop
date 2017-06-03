@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 是否启用 WebAPP 全屏模式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- 状态条颜色 -->
+    <meta name="format-detection" content="telephone=no">   <!-- 屏蔽数字自动识别为电话号码 -->
+    <meta name="description" content="" /> <!-- 页面描述 -->
+    <meta name="keywords" content=""/> <!-- 页面关键词 -->
+    <title>砍一刀</title>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/weui.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-weui.min.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/rest.css">
+    <link type="text/css" rel="stylesheet" href="css/webapp.css">
+    <link type="text/css" rel="stylesheet" href="css/guageEdit.css">
+    <style>
+        .xm-product-slide{border-top:1px solid #822e3e; border-bottom:1px solid #822e3e; margin-bottom:.5rem; background:white;}
+        .xm-product-slide:last-child{margin-bottom:0;}
+        .xm-product-btn{padding: 2px 10px; border-radius: 30px; background:#d92c28;}
+
+        .win_none {display:none}
+        .win {position:fixed; z-index:99999; left:0; top:0; right:0; bottom:0; background:rgba(0,0,0,0.9); -webkit-animation:bg 0.3s ease-out both; -moz-animation:bg 0.3s ease-out both; animation:bg 0.3s ease-out both}
+        .win .transparent_bg {position:fixed; z-index:11; left:0; right:0; top:0; bottom:0}
+        @-webkit-keyframes bg {0% {background:rgba(0,0,0,0)} 100% {background:rgba(0,0,0,0.8)}}
+        @keyframes bg {0% {background:rgba(0,0,0,0)} 100% {background:rgba(0,0,0,0.8)}}
+        .win .layout_win {background:#FFF; position:absolute; left:0; bottom:0; right:0; z-index:12; transform:translateY(110%); -webkit-transform:translateY(110%); -webkit-animation:m_b 0.3s ease-out both; -moz-animation:m_b 0.3s ease-out both; animation:m_b 0.3s ease-out both}
+        @-webkit-keyframes m_b {0% {transform:translateY(110%); -webkit-transform:translateY(110%)} 100% {transform:translateY(0); -webkit-transform:translateY(0)}}
+        @keyframes m_b {0% {transform:translateY(110%); -webkit-transform:translateY(110%)} 100% {transform:translateY(0); -webkit-transform:translateY(0)}}
+        /*遮罩end*/
+        .tips {width:100%; height:100%; background-image:url(images/txt_tips.png),url(images/earth.png); background-repeat:no-repeat; background-position:center -60px,left bottom; background-size:100% auto,50% auto}
+
+
+
+
+
+    </style>
+</head>
+<body class="mhome">
+
+
+
+    <div class="xm-conent" style="padding-bottom:2.5rem;">
+        <!-- Swiper -->
+        <div class="swiper-container" id="swiper-container-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="images/b3.jpg" data-src="images/b3.jpg" style="width:100%; display:block;">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="images/b2.jpg" data-src="images/b2.jpg" style="width:100%; display:block;">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="images/b1.jpg" data-src="images/b1.jpg" style="width:100%; display:block;">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination" id="swiper-pagination-banner"></div>
+        </div>
+        <div class="browse">
+            <div class="browse-box rf12">
+                <i class="fa fa-eye rf14 rmr5" style="color:#ecf19c;"></i>
+                浏览人数：13456
+            </div>
+        </div>
+
+        <div class="xm-activity-title tc rf15"><span>热门产品</span></div>
+        <div class="xm-product-container">
+            <div class="weui-cells no-weui-link" style="margin-top:0; background:none;">
+                <a href="details.html" class="weui-cell xm-product-slide">
+                    <div class="weui-cell__hd">
+                        <div class="xm-product-img rmr10">
+                            <img src="images/default.png" data-src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3589/135/952725904/118353/5d11c2c9/581ae7d4N0ae8f7f7.jpg!q50.jpg" class="db">
+                        </div>
+                    </div>
+                    <div class="weui-cell__bd" style="width:50%;">
+                        <div>
+                            <h1 class="rf14 rmb10 omit">魅力元素女包波士顿包枕头包斜挎单肩手提休闲大包圆筒包子母包 铂金色送女士钱包</h1>
+                            <p class="rf12  red">72人参加</p>
+                            <p class="rf12 ">价格：￥248.00</p>
+                            <p class="rf12 ">底价：￥140.00</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell__ft"><span class="rf12 white xm-product-btn">马上砍</span></div>
+                </a>
+                <a href="details.html" class="weui-cell xm-product-slide">
+                    <div class="weui-cell__hd">
+                        <div class="xm-product-img rmr10">
+                            <img src="images/default.png" data-src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t2260/354/1776015351/390284/b52f1602/56710f5eN342d32ed.jpg!q50.jpg" class="db">
+                        </div>
+                    </div>
+                    <div class="weui-cell__bd" style="width:50%;">
+                        <div>
+                            <h1 class="rf14 rmb10 omit">蔻驰（COACH）女包 女士PVC波士顿手提斜挎包潮流水桶包枕头包 全球购箱包 红色</h1>
+                            <p class="rf12  red">50人参加</p>
+                            <p class="rf12 ">价格：￥749.00</p>
+                            <p class="rf12 ">底价：￥200.00</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell__ft"><span class="rf12 white xm-product-btn">马上砍</span></div>
+                </a>
+                <a href="details.html" class="weui-cell xm-product-slide">
+                    <div class="weui-cell__hd">
+                        <div class="xm-product-img rmr10">
+                            <img src="images/default.png" data-src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t5239/138/227745425/216555/81427607/58fb1db8N6bff6b35.jpg!q50.jpg" class="db">
+                        </div>
+                    </div>
+                    <div class="weui-cell__bd" style="width:50%;">
+                        <div>
+                            <h1 class="rf14 rmb10 omit">艾戈勒瑞士原装进口手表男士机械表皮带超薄男表 经典白盘银钢带 7061A9</h1>
+                            <p class="rf12  red">10人参加</p>
+                            <p class="rf12 ">价格：￥1487.00</p>
+                            <p class="rf12 ">底价：￥999.00</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell__ft"><span class="rf12 white xm-product-btn">马上砍</span></div>
+                </a>
+                <a href="details.html" class="weui-cell xm-product-slide">
+                    <div class="weui-cell__hd">
+                        <div class="xm-product-img rmr10">
+                            <img src="images/default.png" data-src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t3589/135/952725904/118353/5d11c2c9/581ae7d4N0ae8f7f7.jpg!q50.jpg" class="db">
+                        </div>
+                    </div>
+                    <div class="weui-cell__bd" style="width:50%;">
+                        <div>
+                            <h1 class="rf14 rmb10 omit">魅力元素女包波士顿包枕头包斜挎单肩手提休闲大包圆筒包子母包 铂金色送女士钱包</h1>
+                            <p class="rf12  red">72人参加</p>
+                            <p class="rf12 ">价格：￥248.00</p>
+                            <p class="rf12 ">底价：￥140.00</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell__ft"><span class="rf12 white xm-product-btn">马上砍</span></div>
+                </a>
+                <a href="details.html" class="weui-cell xm-product-slide">
+                    <div class="weui-cell__hd">
+                        <div class="xm-product-img rmr10">
+                            <img src="images/default.png" data-src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t2260/354/1776015351/390284/b52f1602/56710f5eN342d32ed.jpg!q50.jpg" class="db">
+                        </div>
+                    </div>
+                    <div class="weui-cell__bd" style="width:50%;">
+                        <div>
+                            <h1 class="rf14 rmb10 omit">蔻驰（COACH）女包 女士PVC波士顿手提斜挎包潮流水桶包枕头包 全球购箱包 红色</h1>
+                            <p class="rf12  red">50人参加</p>
+                            <p class="rf12 ">价格：￥749.00</p>
+                            <p class="rf12 ">底价：￥200.00</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell__ft"><span class="rf12 white xm-product-btn">马上砍</span></div>
+                </a>
+                <a href="details.html" class="weui-cell xm-product-slide">
+                    <div class="weui-cell__hd">
+                        <div class="xm-product-img rmr10">
+                            <img src="images/default.png" data-src="https://m.360buyimg.com/mobilecms/s357x357_jfs/t5239/138/227745425/216555/81427607/58fb1db8N6bff6b35.jpg!q50.jpg" class="db">
+                        </div>
+                    </div>
+                    <div class="weui-cell__bd" style="width:50%;">
+                        <div>
+                            <h1 class="rf14 rmb10 omit">艾戈勒瑞士原装进口手表男士机械表皮带超薄男表 经典白盘银钢带 7061A9</h1>
+                            <p class="rf12  red">10人参加</p>
+                            <p class="rf12 ">价格：￥1487.00</p>
+                            <p class="rf12 ">底价：￥999.00</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell__ft"><span class="rf12 white xm-product-btn">马上砍</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="xm-bottom-nav">
+        <a href="javascript:;" class="rf14" id="showShare">分享好友</a>
+        <a href="javascript:;" class="rf14 open-popup"  data-target="#raiders">帮砍攻略</a>
+    </div>
+
+    <div id="raiders" class="weui-popup__container ">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+            <div class="xm-activity-title tc rf15"><span>游戏攻略</span></div>
+            <div style="padding:0 3%;">
+                <div class="xm-explain-textarea white">
+                    <p class="lh20 rmt10 rf14">1、砍价活动自用户点击“找好友帮我砍价”按钮开始计时，活动持续24小时</p>
+                    <p class="lh20 rmt10 rf14">2、每个活动最多允许500个好友帮忙砍价</p>
+                    <p class="lh20 rmt10 rf14">3、活动结束时，微信好友砍价的总金额即会以优惠的形式发放到用户账户中</p>
+                    <p class="lh20 rmt10 rf14">4、砍价所获得的优惠不能重复使用</p>
+                </div>
+            </div>
+
+
+            <div style="padding:1rem 15%;">
+                <a href="javascript:;" class="weui-btn raiders-btn  rf16 close-popup">关闭</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="win win_none" style=""><div class="tips" style="position: absolute;top: 0px"></div></div>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/lazy-load-img.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/guageEdit.js"></script>
+<script>
+
+    var swiper = new Swiper('#swiper-container-banner', {
+        pagination: '#swiper-pagination-banner',
+        paginationClickable: true,
+        autoplay:3000,
+        autoplayDisableOnInteraction : false,
+    });
+
+    $(function(){
+
+        $("#showShare").on("click",function() {
+            $(".win").show();
+        })
+        $(".win").on("click",function() {
+            $(this).hide();
+        })
+
+
+
+
+    })
+
+
+</script>
+</body>
+</html>

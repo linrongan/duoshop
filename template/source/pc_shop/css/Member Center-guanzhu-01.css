@@ -1,0 +1,375 @@
+﻿body,div,span,b,i,strong,em,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+}
+
+body{   min-width: 1200px; font-family: "微软雅黑";}
+
+li{list-style:none;}
+
+a{text-decoration:none}
+
+/*底部开始*/
+.bottom-box{	width: 100%;	background-color: #FFFFFF;	margin-top: 27px;   border-top: solid 2px #FF464E;}
+
+.logo-box-01{	width: 1200px;	margin: auto;	overflow: hidden;}
+
+.logo-img{	width: 180px;	float: left;	margin-top: 55px;	margin-left: 30px;}
+
+.logo-img p{	font-size: 20px;	color: #FF464E;	font-family: arial;	float: right;}
+
+.logo-img a{	display: block;	padding-left: 12px;	padding-right: 15px;	margin-top: 10px;}
+
+.Navigation{	float: left;	margin-top: 48px;	margin-left: 90px;}
+
+.Navigation li{	float: left;	margin-right: 115px;}
+
+.Navigation span{	font-size: 14px;	line-height: 32px;	font-weight: bold;	color: #666666;	font-family: "Microsoft YaHei";}
+
+.Navigation a{	line-height: 24px;	font-size: 12px;	color: #666666;	font-family: "Microsoft YaHei";}
+
+
+.erweima{	float: right;	margin-top: 53px;	margin-right: 73px;}
+
+.erweima p{	font-size: 14px;	color: #666666;	font-weight: bold;	margin-bottom: 10px;	text-align: center;	font-family: "Microsoft YaHei";}
+
+.erweima img{	width: 90px;	height: 90px;}
+
+.xiam{	width: 1200px;	height: 1px;	background-color: #ebebeb;	float: left;	margin-bottom: 20px;	margin-top: 20px;}
+
+.dibu{	float: left;	width: 1200px;}
+
+.dibu li{	margin: auto;	width: 350px;	overflow: hidden;}
+
+.dibu a{	font-size: 12px;	color: #666666;	float: left;	margin-left: 5px;	margin-right: 5px;	font-family: "Microsoft YaHei";}
+
+.dibu p{	font-size: 12px;	color: #666666;	text-align: center;	font-family: "Microsoft YaHei";	margin-top: 10px;	margin-bottom: 20px;}
+
+.logo-box-01 a:hover,.logo-box-01 a:active{ 	color: #FF464E;	}
+/*底部结束*/
+/*顶部开始*/
+/*左*/
+.top-box-01{
+	width: 100%;
+	background-color: #f5f5f5;
+	    overflow: hidden;
+}
+.top-01{
+	width: 1200px;
+	margin: auto;
+	    overflow: hidden;
+	 padding: 8px 0px;
+}
+.left-03{
+	float: left;
+}
+.left-03 span{
+	font-size: 12px;
+	color: #888888;
+	float: left;
+}
+.left-03 img{
+	float: left;
+	margin-right: 5px;
+}
+/*左*/
+
+/*右*/
+.right-02{
+	float: right;
+}
+.right-02 a{
+	float: left;
+	margin-left: 20px;
+	font-size: 12px;
+	color: #888888;
+}
+.img-10{
+	float: left;
+	margin-top: 1px;
+	margin-right: 5px;
+}
+.right-02 .span-14{
+	color: #FF464E;
+}
+.span-15{
+	float: left;
+}
+.span-16{
+	float: left;
+	color: #FF464E;
+}
+/*右*/
+/*顶部结束*/
+/*首页导航*/
+.home-page{
+	width: 100%;
+	background-color: #FF464E;
+	
+}
+.home-page-box{
+	width: 1200px;
+	margin: auto;
+	padding: 13px 0px;
+	overflow: hidden;
+}
+.logo-box-02{
+	    width: 82px;
+	    height: 34px;
+	    float: left;
+}
+.logo-box-02 img{
+	width: 100%;
+	display: block;
+}
+
+.ul-04{
+	float: left;
+	margin-left: 95px;
+}
+.ul-04 li{
+	float: left;
+	margin-right: 48px;
+	padding: 8px 0px;
+}
+.ul-04 a{
+	font-size: 14px;
+    color: #FFFFFF;
+}
+/*首页导航结束*/
+.content-box{
+	width: 100%;
+	background-color: #f6f6f6;
+	padding: 30px 0px;
+}
+.content-box-01{
+	width: 1200px;
+	margin: auto;
+	    overflow: hidden;
+}
+/*左*/
+.left-04{
+	float: left;
+	background-color: #FFFFFF;
+}
+.ul-05{
+	padding-left: 55px;
+	padding-right: 31px;
+	position:relative;
+	    padding-bottom: 30px;
+}
+.ul-05 a{
+	font-size: 14px;
+	color: #666666;
+	font-weight: bold;
+	text-align: left;
+}
+.ul-05 li{
+	margin-top: 30px;
+}
+.img-box-05{
+	width: 15px;
+	position:absolute;
+	left: 30px;
+	top: 3px;
+}
+.img-box-05 img{
+	    margin-bottom: 33px;
+
+}
+/*左*/
+.right-05{
+	background-color: #FFFFFF;
+	width: 973px;
+	float: right;
+	padding: 30px 24px;
+}
+.ul-12 li{
+	float: left;
+	margin-right: 30px;
+}
+.ul-12 a{
+	font-size: 16px;
+	color: #333333;
+}
+.ul-12 .li-07{
+	color: #FF464E;
+}
+.ul-12{
+	overflow: hidden;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #E6E6E6;
+}
+.dianpu{
+	border: solid 1px #E6E6E6;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.dianpu-01{
+	float: left;
+	width: 198px;
+	border-right: solid 1px #E6E6E6;
+	padding-top: 37px;
+	padding-bottom: 24px;
+}
+.img-box-06{
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	border:  solid 1px #E6E6E6;
+}
+.img-box-06 img{
+	width: 100%;
+	display: block;
+}
+.p-12{
+	font-size: 16px;
+	 color: #333333;
+	 text-align: center;
+	 font-weight: bold;
+	 margin-top: 15px;
+	     display: block;
+	     margin-bottom: 6px;
+}
+.xing{
+	margin: auto;
+	display: block;
+}
+.rshu{
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 20px;
+}
+.dianpu-02{
+	float: left;
+	    width: 772px;
+}
+.gao{
+   overflow: hidden;
+}
+.re{
+	border: solid 1px #E6E6E6;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+}
+.li-08{
+	background-color: #FF464E;
+}
+.re .li-08 a{
+	color: #FFFFFF;
+}
+.re li{
+	float: left;
+	padding: 6px 12px;
+	border-right: solid 1px #E6E6E6;
+}
+.re li:last-child{
+	border-right: solid 0;
+}
+.re a{
+	font-size: 14px;
+	color: #333333;
+}
+.img-box-06{
+	width: 87px;
+	height: 87px;
+}
+.img-box-06 img{
+	width: 100%;
+	display: block;
+}
+.p-13{
+	font-size: 12px;
+	color: #FF464E;
+	margin-top: 10px;
+}
+.shang{
+	float: left;
+	margin-top: 25px;
+	margin-left: 55px;
+}
+/*右*/
+.like-s-box{
+	width: 100%;
+	overflow: hidden;
+}
+.like-box-02{
+	width: 222px;
+	height: 305px;
+	background-color: #FFFFFF;
+	float: left;
+	margin-top: 20px;
+	margin-right: 12px;
+	margin-left: 8px;
+	border: solid 1px #E6E6E6;
+	position: relative;
+}
+.like-box-02 a{
+	padding: 6px;
+	display: block;
+	}
+.img-05{
+	width: 210px;
+	
+	margin: auto;
+}
+.img-05 img{
+	width: 100%;
+	display: block;
+}
+
+.like-box-02 p{
+	font-size: 12px;
+	text-align: center; 
+}
+.wz-2{
+	color: #4d4d4d;
+	margin-top: 10px;
+	
+}
+.wz-3{
+	color: #FF464E;
+	font-weight:bold;
+	height: 30px;
+	line-height: 30px;
+	width: 210px;
+	margin: auto;
+}
+.wz-box{
+	width: 210px;
+	height: 40px;
+	margin: auto;
+	line-height: 20px;
+}
+.like-s-box li:last-child {
+	margin-right:0
+}
+.span-25{
+	font-size: 12px;
+	color: #FFFFFF;
+	padding: 5px 7px;
+	background-color: #000000;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.span-25:hover,.span-25:active{ opacity: 0.5;}
+
+.cai{
+	margin-top: 20px;
+	padding-left: 29px;
+	padding-right: 29px;
+	background-color: #FFFFFF;
+	padding-bottom: 20px;
+	padding-top: 15px;
+	float: right;
+}
+.cai h1{
+	font-size: 16px;
+	color: #666666;
+}

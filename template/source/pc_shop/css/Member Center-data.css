@@ -1,0 +1,341 @@
+﻿body,div,span,b,i,strong,em,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+}
+
+body{   min-width: 1200px; font-family: "微软雅黑";}
+
+li{list-style:none;}
+
+a{text-decoration:none}
+
+/*底部开始*/
+.bottom-box{	width: 100%;	background-color: #FFFFFF;	margin-top: 27px;   border-top: solid 2px #FF464E;}
+
+.logo-box-01{	width: 1200px;	margin: auto;	overflow: hidden;}
+
+.logo-img{	width: 180px;	float: left;	margin-top: 55px;	margin-left: 30px;}
+
+.logo-img p{	font-size: 20px;	color: #FF464E;	font-family: arial;	float: right;}
+
+.logo-img a{	display: block;	padding-left: 12px;	padding-right: 15px;	margin-top: 10px;}
+
+.Navigation{	float: left;	margin-top: 48px;	margin-left: 90px;}
+
+.Navigation li{	float: left;	margin-right: 115px;}
+
+.Navigation span{	font-size: 14px;	line-height: 32px;	font-weight: bold;	color: #666666;	font-family: "Microsoft YaHei";}
+
+.Navigation a{	line-height: 24px;	font-size: 12px;	color: #666666;	font-family: "Microsoft YaHei";}
+
+
+.erweima{	float: right;	margin-top: 53px;	margin-right: 73px;}
+
+.erweima p{	font-size: 14px;	color: #666666;	font-weight: bold;	margin-bottom: 10px;	text-align: center;	font-family: "Microsoft YaHei";}
+
+.erweima img{	width: 90px;	height: 90px;}
+
+.xiam{	width: 1200px;	height: 1px;	background-color: #ebebeb;	float: left;	margin-bottom: 20px;	margin-top: 20px;}
+
+.dibu{	float: left;	width: 1200px;}
+
+.dibu li{	margin: auto;	width: 350px;	overflow: hidden;}
+
+.dibu a{	font-size: 12px;	color: #666666;	float: left;	margin-left: 5px;	margin-right: 5px;	font-family: "Microsoft YaHei";}
+
+.dibu p{	font-size: 12px;	color: #666666;	text-align: center;	font-family: "Microsoft YaHei";	margin-top: 10px;	margin-bottom: 20px;}
+
+.logo-box-01 a:hover,.logo-box-01 a:active{ 	color: #FF464E;	}
+/*底部结束*/
+/*顶部开始*/
+/*左*/
+.top-box-01{
+	width: 100%;
+	background-color: #f5f5f5;
+	    overflow: hidden;
+}
+.top-01{
+	width: 1200px;
+	margin: auto;
+	    overflow: hidden;
+	padding: 8px 0px;
+}
+.left-03{
+	float: left;
+}
+.left-03 span{
+	font-size: 12px;
+	color: #888888;
+	float: left;
+}
+.left-03 img{
+	float: left;
+	margin-right: 5px;
+}
+/*左*/
+
+/*右*/
+.right-02{
+	float: right;
+}
+.right-02 a{
+	float: left;
+	margin-left: 20px;
+	font-size: 12px;
+	color: #888888;
+}
+.img-10{
+	float: left;
+	margin-top: 1px;
+	margin-right: 5px;
+}
+.right-02 .span-14{
+	color: #FF464E;
+}
+.span-15{
+	float: left;
+}
+.span-16{
+	float: left;
+	color: #FF464E;
+}
+/*右*/
+/*顶部结束*/
+/*首页导航*/
+.home-page{
+	width: 100%;
+	background-color: #FF464E;
+	
+}
+.home-page-box{
+	width: 1200px;
+	margin: auto;
+	padding: 13px 0px;
+	overflow: hidden;
+}
+.logo-box-02{
+	    width: 82px;
+	    height: 34px;
+	    float: left;
+}
+.logo-box-02 img{
+	width: 100%;
+	display: block;
+}
+
+.ul-04{
+	float: left;
+	margin-left: 95px;
+}
+.ul-04 li{
+	float: left;
+	margin-right: 48px;
+	padding: 8px 0px;
+}
+.ul-04 a{
+	font-size: 14px;
+    color: #FFFFFF;
+}
+/*首页导航结束*/
+.content-box{
+	width: 100%;
+	background-color: #f6f6f6;
+	padding: 30px 0px;
+}
+.content-box-01{
+	width: 1200px;
+	margin: auto;
+	    overflow: hidden;
+}
+/*左*/
+.left-04{
+	float: left;
+	background-color: #FFFFFF;
+}
+.ul-05{
+	padding-left: 55px;
+	padding-right: 31px;
+	position:relative;
+	    padding-bottom: 30px;
+}
+.ul-05 a{
+	font-size: 14px;
+	color: #666666;
+	font-weight: bold;
+	text-align: left;
+}
+.ul-05 li{
+	margin-top: 30px;
+}
+.img-box-05{
+	width: 15px;
+	position:absolute;
+	left: 30px;
+	top: 3px;
+}
+.img-box-05 img{
+	    margin-bottom: 33px;
+
+}
+/*左*/
+/*右*/
+.right-04{
+	float: right;
+	width: 1022px;
+	background-color: #ffffff;
+	    padding-bottom: 46px;
+}
+.ge-box{
+	background-color: #ebebeb;
+	padding: 12px 0;
+	
+}
+.ge-box h1{
+	font-size: 16px;
+	color: #333333;
+	font-family: "Microsoft YaHei";
+	margin-left: 30px;
+}
+.ge-box-01{
+	background-color: #FFFFFF;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.yuan-02{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #ebebeb;
+	position: relative;
+	margin-left: 120px;
+	margin-bottom: 30px;
+}
+.yuan-02 a{
+	font-size: 12px;
+	color: #FFFFFF;
+	width: 100px;
+	height: 25px;
+     position: absolute;
+    left: 0px;
+    bottom: -5px;
+        text-align: center;
+            z-index: 2;
+}
+.yuan-03{
+	background-color: #000000;
+        opacity: .5;
+        width: 100px;
+        height: 25px;
+            position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+.span-21{
+	width: 974px;
+	height: 1px;
+	background-color: #E6E6E6;
+	margin: auto;
+	display: block;
+}
+.ge-box-02 p{
+	color: #FF464E;
+}
+.ge-box-02 span{
+	font-size: 14px;
+	color: #333333;
+}
+.ge-box-02{
+    overflow: hidden;
+        margin-top: 30px;
+}
+.controls {
+    float: left;
+}
+.controls .text {
+    width: 140px;
+    height: 18px;
+    padding: 3px 5px;
+    border: 1px solid #bbb;
+    line-height: 18px;
+}
+.ge{
+	float: left;
+	text-align: right;
+	width: 136px;
+}
+.control-group {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.control-label {
+    float: left;
+    width: 136px;
+    text-align: right;
+    line-height: 26px;
+    color: #333333;
+    font-size: 14px;
+}
+.control-label em {
+    color: #f00;
+}
+.controls {
+    float: left;
+}
+.controls .sex-label input {
+    float: left;
+    margin-top: 7px;
+}
+.controls .sex-label span {
+    float: left;
+    margin: 5px 20px 0 5px;
+    font-size: 14px;
+}
+.item {
+    display: inline-block;
+    display: block;
+    margin-bottom: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.item span.label {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 6px 0;
+    width: 136px;
+    text-align: right;
+        color: #333333;
+    font-size: 14px;
+}
+.birthday-info {
+    width: 397px;
+    overflow: hidden;
+}
+.selt1 {
+    width: 70px;
+        color: #333333;
+}
+.item option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.label {
+    float: none;
+        color: #333333;
+}
+
+.item label {
+    float: none;
+}
+.span-22{
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 10px 33px;
+	background-color: #FF464E;
+	margin-left: 106px;
+    margin-top: 10px;
+}

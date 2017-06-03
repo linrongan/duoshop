@@ -1,0 +1,80 @@
+/*
+@-moz-keyframes fullexpand {
+    0%  { width:0px;}
+    100%{ width:25%;}
+}
+@-webkit-keyframes fullexpand {
+    0%  { width:0px;}
+    100%{ width:25%;}
+}*/
+
+
+.browse{padding:.25rem 3%; background:white; border-top:1px solid #822e3e; border-bottom:1px solid #822e3e;}
+.xm-activity-title{height:2rem; line-height: 2rem;}
+.xm-activity-title>span{color:white; position: relative;}
+.xm-activity-title>span::before,.xm-activity-title>span::after{content:''; width:100px; height: 1px; border-top: 1px solid white;  position: absolute;  top: 50%;}
+.xm-activity-title>span::before{left: -110px;}
+.xm-activity-title>span::after{right: -110px;}
+.xm-product-img{width:4.25rem; height: 4.25rem;}
+
+.xm-bottom-nav{position:fixed; left: 0; bottom:0; padding:.5rem 3%; width: 100%; background:#deba9a; text-align: center;}
+.xm-bottom-nav>a{display:inline-block; height:1.5rem; line-height:1.5rem; padding:0 1rem; background:#d92c28; color:white; text-align: center; border-radius: 1.5rem; margin: 0 1rem;}
+
+.xm-details-box{ position: relative;}
+.xm-details-bg{height:16.25rem; background:#ffa33c;}
+.xm-details-prize{width:80%; height:5rem; background:#ef3a3f; border-radius: .5rem;  position: relative; margin-top: -4.6rem; margin-left: 10%; padding:.5rem; }
+
+.xm-details-prize::before,.xm-details-prize::after{content:''; width:.6rem; height:.6rem; border-radius:50%; background:#ef3a3f; position: absolute; top: 50%; margin-top: -.3rem; }
+
+.xm-details-prize::before{left:.25rem;}
+.xm-details-prize::after{right:.25rem;}
+
+.xm-details-price{background:white; width:100%; height:100%; border-radius: .5rem; padding:.5rem .75rem;}
+.xm-details-progress{padding:0 5%;}
+.xm-progress-icon,.xm-progress-user{height:.6rem;  line-height: .6rem; display: -webkit-box;  display: -webkit-flex;  display: flex;  }
+.xm-progress-flex,.xm-progress-item{ display: block;  -webkit-box-flex: 1;  -webkit-flex: 1;   flex: 1; position: relative; text-align: center;}
+.xm-progress-flex::before{content:''; width:.6rem; height: .6rem; background:url(../images/addressicon.png) no-repeat; background-size: cover; position: absolute; left: 50%; margin-left: -.3rem; top: 0;}
+
+.xm-progress-flex:first-child,.xm-progress-flex:last-child,.xm-progress-item:first-child,.xm-progress-item:last-child{-webkit-box-flex: 0.5;  -webkit-flex: 0.5;   flex: 0.5;}
+.xm-progress-flex:first-child::before{ left:0; margin-left: 0px;}
+.xm-progress-flex:last-child::before{ left: auto; right: 0; margin-left: auto;}
+.xm-progress-strip{margin:.25rem 1%; height: .5rem; overflow: hidden; background:#f6f6f6; border-radius:.5rem;}
+.xm-progress-strip-active{ height: 100%; background: url(../images/strip-active.jpg) repeat-x; background-size:auto 100%; width: 0;
+    -webkit-transition: width 1.8s;
+    transition: width 1.8s;
+}
+.xm-progress-item{color:#ee7b31;  text-overflow: ellipsis;  white-space: nowrap;  overflow: hidden;}
+.xm-progress-item:first-child{text-align:left;}
+.xm-progress-item:last-child{text-align:right;}
+
+.xm-details-button{padding:0 8%;}
+.xm-details-button>a{width:100%; height:2rem; line-height: 2rem; border-radius:2rem; text-align: center; color:white; margin:auto; display: block; background:url(../images/btn-bg.jpg) no-repeat; background-size:100% 100%;}
+
+
+
+.xm-activity-tabs{margin:2rem 8% 0; height: 2rem; line-height: 1.8rem; border:2px solid #f73e3c; border-radius:.25rem;  display: -webkit-box;  display: -webkit-flex;  display: flex;}
+
+.xm-activity-flex{    display: block;  -webkit-box-flex: 1;  -webkit-flex: 1;  flex: 1; border-right:2px solid #f73e3c; color:white; text-align: center; }
+.xm-activity-flex:first-child{-webkit-box-flex: .8;  -webkit-flex: .8;  flex: .8;}
+.xm-activity-flex:last-child{border-right:none; -webkit-box-flex: .8;  -webkit-flex: .8;  flex: .8;}
+.xm-activity-flex.xm-activity-active{background:#f93d3c;}
+.xm-activity-panel{padding:0 8%;}
+.xm-activity-item{display: none;}
+.xm-activity-item:first-child{display:block;}
+.xm-activity-item .weui-cell{padding:.5rem 0; border-bottom:1px solid #db5147;}
+.xm-activity-item .weui-cell:last-child{border-bottom:none;}
+
+.xm-explain-title{width:94%; margin: 1rem 3% 0; height: 3rem; background:url(../images/rule-bg.jpg) no-repeat; background-size:100% 100%; text-align: center; line-height: 2.8rem; color:white;}
+.xm-explain-textarea{padding:1.8rem 5%; min-height:5rem; background:url(../images/rule-con-bg.jpg) no-repeat; background-size:100% 100%;}
+.raiders-btn{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    margin: auto;
+    display: block;
+    background: url(../images/btn-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}

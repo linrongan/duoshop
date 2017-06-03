@@ -1,0 +1,147 @@
+body,div,span,b,i,strong,em,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1200px;
+    font-family: "微软雅黑";
+	
+}
+li{list-style:none;}
+a{text-decoration:none}
+
+.logo-top{
+	width: 980px;
+	margin: auto;
+	height: 100px;
+}
+/*登录*/
+.logo-denglu{
+	width: 127px;
+	height: 54px;
+	background-image: url(../img/images/images/logodenglu_03.png);
+	float: left;
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+.logo-top-box{
+	width: 265px;
+	float: left;
+}
+.span-27{
+	font-size: 26px;
+	color: #333333;
+	    float: right;
+    margin-top: 31px;
+}
+.denglu-box{
+	    min-width: 980px;
+	    background: url(../img/images/images/beij_02.jpg) center no-repeat;
+	height: 480px;
+}
+.denglu-zhong{
+	width: 980px;
+	margin: auto;
+	height: 480px;
+}
+.denglu-bei{
+	width: 364px;
+	background-color: #FFFFFF;
+	float: right;
+	margin-top: 36px;
+	height: 407px;
+}
+.denglu-a-01{
+	font-size: 12px;
+	color: #ff464e;
+	float: right;
+	}
+.denglu-a-02{
+	font-size: 12px;
+	color: #333333;
+	float: right;
+	}
+.denglu-bei-01{
+	overflow: hidden;
+	    padding-top: 30px;
+    padding-right: 47px;
+}
+.zhanghao{
+	padding-top: 20px;
+}
+.mima{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.yanzheng{
+overflow: hidden;
+	padding-bottom: 30px;
+}
+#yan{
+	width: 136px;
+	height: 36px;
+	border-radius:4px;
+	float: left;
+	display: block;	
+	padding-left: 10px;
+	border: solid 1px #E6E6E6;
+	margin-left: 45px;
+}
+.yan-a{
+	font-size: 12px;
+	color: #999999;
+	float: left;
+	background-color: #e6e6e6;
+	padding: 12px 29px;
+	border-radius: 4px;
+	margin-left: 8px;
+}
+#loginname{
+	width: 262px;
+	height: 36px;
+	border-radius:4px;
+	margin: auto;
+	display: block;	
+	padding-left: 10px;
+	border: solid 1px #E6E6E6;
+}
+.denglu{
+	font-size: 15px;
+	color: #FFFFFF;
+	width: 272px;
+	line-height: 30px;
+	background-color: #ff464e;
+	margin: auto;
+	    display: block;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 17px;
+    line-height: 40px;
+}
+
+.jizhu{
+	overflow: hidden;
+	margin-bottom: 43px;
+}
+.auto-login{
+	float: left;
+	 margin-left: 42px;
+}
+.auto-login input {
+    float: left;   
+}
+.auto-login label{
+	font-size: 12px;
+	color: #333333;
+	float: left;
+}
+/*登录结束*/
+.bottom-box{
+	margin-top: 60px;
+}
+.bottom-box p{
+	font-size: 12px;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 10px;
+}
